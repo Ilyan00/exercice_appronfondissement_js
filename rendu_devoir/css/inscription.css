@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "CoffeCake";
+    src: url(../font/CoffeCake.ttf);
+}
+
+*{
+    font-family: "CoffeCake",Arial;
+}
+
+body{
+    background-color:  #EFC3A4;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+h1{
+    color: #BE7656;
+}
+
+.icone , .logo{
+    width: 10vw;
+    height: 10vw;
+}
+
+.icone:hover{
+    transform: scale(1.1);
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    rotate: 90deg;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    justify-content: space-between;
+    color: #BE7656;
+    font-size: x-large;
+    background-color: #4B1F0E;
+    border: 0.3vw solid #BE7656;
+    border-radius: 10vw;   
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2vw;
+}
+
+fieldset{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    justify-content: space-between;
+    color: #BE7656;
+    font-size: x-large;
+    background-color: #4B1F0E;
+    border: 0.3vw solid #BE7656;
+    border-radius: 10vw;  
+}
+
+#motDePasse , #haut{
+    min-height: 4vw;
+    min-width: 30vw;
+    font-size: x-large;
+    font-family: Arial;
+    color: #BE7656;
+    background-color:whitesmoke ;
+    border: 0.3vw solid #EFC3A4;
+    border-radius: 10vw;    
+}
+
+#haut::placeholder, #motDePasse::placeholder{
+    color: #BE7656;
+    font-family: "CoffeCake";
+    font-size: large;
+}
+
+img{
+    width: 40vw;
+    height: 45vw; 
+    border: 0.5vw solid #4B1F0E;
+    border-radius: 10vw;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    color: #BE7656;
+    background-color: #4B1F0E;
+    border: 0.3vw solid #BE7656;
+    border-radius: 2vw;
+
+}
+
+
+.error {
+    color: red;
+}
+
+.error-input {
+    border: 1px solid red;
+    background-color: red;
+    color: blue; /* Couleur du texte en bleu */
+}

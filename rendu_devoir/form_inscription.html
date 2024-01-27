@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        
+    </script>
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="css/inscription.css">
+</head>
+<body>
+    <header>
+        <a href="boutique.html"><img class="logo" src="image/logo.png" alt="Logo de Coffee Bien Strong"></a>
+        <h1 class="title">Coffee Bien Strong</h1>
+        <a href="index.html"><img class="icone" src="image/utilisateur.png" alt="Retour a la connexion"></a>
+    </header>
+
+    <form id="monFormulaire" action="boutique.html" method="post">
+        <fieldset>
+            <legend>Informations personnelles</legend>
+            <!-- Champ de texte simple -->
+            <label for="nom">Nom :</label>
+            <input type="text" id="haut" name="nom"  placeholder="Nom" required>
+
+            <!-- Champ de texte pour l'e-mail -->
+            <label for="email">E-mail :</label>
+            <input type="email" id="haut" name="email" placeholder="E-mail" required>
+
+            <!-- Champ de texte pour le mot de passe -->
+            <label for="motDePasse">Mot de passe :</label>
+            <input type="password" id="motDePasse" name="motDePasse" placeholder="Mot de Passe" required>
+            <!-- Affiche un message d'erreur pour le mot de passe -->
+            <p id="motDePasseError" class="error"></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Autres informations</legend>    
+            <!-- Case à cocher -->
+            <div>
+                <input type="checkbox" id="abonnement" name="abonnement" value="s'abonner">
+                <label for="abonnement">S'abonner à la newsletter</label>
+            </div>
+
+            <!-- Boutons radio -->
+            <div>
+            <p>Genre :</p>
+                <input type="radio" id="homme" name="genre" value="homme">
+                <label for="homme">Homme</label>
+                <input type="radio" id="femme" name="genre" value="femme">
+                <label for="femme">Femme</label>
+                <!-- Affiche un message d'erreur pour le genre -->
+                <p id="genreError" class="error"></p>
+            </div>
+
+            <!-- Menu déroulant (select) -->
+            <div>
+                <label for="pays">Pays :</label>
+                <select id="pays" name="pays">
+                    <option value="france">France</option>
+                    <option value="espagne">Espagne</option>
+                    <option value="italie">Italie</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <!-- Input de type submit pour le bouton de soumission -->
+        <input type="button" value="Envoyer" id="bt">
+    </form>
+    <script src="js/inscription.js"></script>
+</body>
+</html>

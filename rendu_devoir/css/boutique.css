@@ -1,0 +1,246 @@
+@font-face {
+    font-family: "CoffeCake";
+    src: url(../font/CoffeCake.ttf);
+}
+
+*{
+    font-family: "CoffeCake",Arial;
+}
+
+.title{
+    color: #BE7656;
+}
+
+body{
+    background-color:  #EFC3A4;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.icone , .logo{
+    width: 10vw;
+    height: 10vw;
+}
+
+.icone:hover{
+    transform: scale(1.1);
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    rotate: 90deg;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    justify-content: space-between;
+    color: #BE7656;
+    font-size: x-large;
+    background-color: #4B1F0E;
+    border: 0.3vw solid #BE7656;
+    border-radius: 10vw;   
+}
+
+.menu-container {
+    display: flex;    
+    align-items: center;
+    padding: 10px;
+    justify-content: space-evenly;
+    background-color: #4B1F0E;
+    border: 0.3vw solid #BE7656;
+    border-radius: 10vw; 
+}
+
+/* Styles pour l'icône du menu burger */
+.burger-menu {
+    cursor: pointer;
+    display: none; /* Masqué par défaut sur les écrans plus larges */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s; /* Animation de transition pour les barres du burger */
+}
+
+/* Styles pour la liste de navigation */
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #BE7656;
+    font-weight: bold;
+}
+
+
+a{
+    color: #BE7656;
+    font-size: large;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.vetement , .accessoire{
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-around;
+
+}  
+
+.article{
+    width: 20vw;
+    height: 25vw; 
+    border: 0.5vw solid #4B1F0E;
+    border-radius: 10vw;
+}
+
+.article:hover{
+    transform: scale(1.5);
+}
+
+.produit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    color: #BE7656;
+    background-color: #4B1F0E;
+    border: 0.3vw solid #BE7656;
+    border-radius: 2vw;
+
+}
+
+
+  
+.swiper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #EFC3A4;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #BE7656;
+    margin: 0;
+    padding: 0; 
+    background-color: #4B1F0E;
+    border: 0.3vw solid #BE7656;
+    border-radius: 2vw;
+}
+  
+swiper-container {
+    width: 80%;
+    height: 20vw;
+}
+  
+swiper-slide {
+    text-align: center;
+    font-size: 30px;
+    background: #4B1F0E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+swiper-slide img {
+    display: block;
+    width: 20vw;
+    height: 90%;
+    object-fit:fill;
+    margin-top: 0.5vw;
+}
+
+@media  all and (max-device-width:800px) {
+
+    .title{
+        font-size: xx-large;
+    }
+
+
+    main{
+        display: flex;
+        align-items: center;
+    }
+
+    .vetement , .accessoire{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;    
+    } 
+
+    .menu-container{
+        justify-content: space-between;
+        max-width: fit-content;
+        max-height: fit-content;
+    }
+
+    .article{
+        width: 60vw;
+        height: 65vw; 
+        border: 2vw solid #4B1F0E;
+        border-radius: 10vw;
+    }
+
+    .produit{
+        font-size: xx-large;
+    }
+
+    footer {
+        font-size: large;
+    }
+
+    .burger-menu {
+        display: block; /* Affiché sur les écrans plus petits */
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-content: center;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #4B1F0E;
+        border: 0.3vw solid #BE7656;
+        border-radius: 10vw; 
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .swiper{
+        display: none;
+    }
+}

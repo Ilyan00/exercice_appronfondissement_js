@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../form"
+		},
+		{
+			"path": "../../test_mdp"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "test_mdp"
+	}
+}

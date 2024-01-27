@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "CoffeCake";
+    src: url(../font/CoffeCake.ttf);
+}
+
+*{
+    font-family: "CoffeCake",Arial;
+}
+
+body{
+    background-color:  #EFC3A4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2vw;
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    color: #BE7656;
+    background-color: #4B1F0E;
+    border: 0.3vw solid #BE7656;
+    border-radius: 10vw;
+}
+
+main{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    color: #BE7656;
+    background-color: #4B1F0E;
+    border: 0.5vw solid #BE7656;
+    border-radius: 3vw;
+    padding: 2vw;
+    
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large; 
+
+}
+.connexion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5vw;
+    min-height: 20vw;
+    min-width: 30vw;
+}
+
+input{
+    min-height: 4vw;
+    min-width: 30vw;
+    font-size: x-large;
+    font-family: Arial;
+    color: #BE7656;
+    background-color:whitesmoke ;
+    border: 0.3vw solid #EFC3A4;
+    border-radius: 10vw;    
+}
+
+input::placeholder{
+    color: #BE7656;
+    font-family: "CoffeCake";
+    font-size: large;
+}
+
+
+button{
+    min-height: 6vw;
+    min-width: 20vw;
+    background-color:whitesmoke ;
+    border: 0.3vw solid #EFC3A4;
+    border-radius: 10vw; 
+    color: #BE7656;
+    font-size: x-large;     
+}
+
+a{
+    text-decoration: none;
+    color: #BE7656;
+    font-size: x-large;   
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    color: #BE7656;
+    background-color: #4B1F0E;
+    border: 0.3vw solid #BE7656;
+    border-radius: 2vw;
+
+}
